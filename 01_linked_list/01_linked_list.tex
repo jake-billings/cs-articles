@@ -18,7 +18,7 @@
 \maketitle
 
 \begin{abstract}
-	This article contains a brief description of and a tuorial for the creation of the linked list data structure. It is intended for fellow computer science students in a data structures course.
+	This article contains a brief description of and a tutorial for the creation of the linked list data structure. It is intended for fellow computer science students in a data structures course.
 \end{abstract}
 
 \newpage
@@ -35,7 +35,7 @@ According to \href{https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked Lists
 \includegraphics[width=\textwidth]{linked_list_diagram}
 
 \paragraph{Why?}
-	We use linked lists for their relatively quick insertion times. You'll see later. Inserting into a Linked List requires only a single O(1) operation. Linked Lists are not well-suited to applications where the end of the list is read requently. Since lookup times near the end of the list are O(n) where n is the number of elements in the list, these lookups are inefficent compared to other data structures.
+	We use linked lists for their relatively quick insertion times. You'll see later. Inserting into a Linked List requires only a single O(1) operation. Linked Lists are not well-suited to applications where the end of the list is read frequently. Since lookup times near the end of the list are O(n) where n is the number of elements in the list, these lookups are inefficient compared to other data structures.
 
 \newpage
 
@@ -72,8 +72,6 @@ public:
 \subsection{LinkedList Fields}
 
 \begin{lstlisting}[language = C++]
-
-
 template<typename T>
 class LinkedList {
 private:
@@ -88,8 +86,7 @@ Node<T> *head;
 \end{lstlisting}
 
 \paragraph{LinkedList}
-In this example, the LinkedList class has one private field, which is the head pointer. The list manipulation functions in the LinkedList class all use this pointer to begin data access. No toher references are stored to elements of the list.
-
+In this example, the LinkedList class has one private field, which is the head pointer. The list manipulation functions in the LinkedList class all use this pointer to begin data access. No other references to elements of the list are stored.
 \newpage
 
 \subsection{Insert at Front}
@@ -165,7 +162,7 @@ Inserting at the back of a LinkedList is hard. You must follow every single poin
 \newpage
 
 \subsection{Full Implementation}
-Only a few functions are documented in this tutorial. I have a complete implementation available on GitHub. It contains operations for adding and removing elements at any position in the list. It also manages allocating/freeing memory in constructors and destructors. This implementation has been verified using automated testing.\\
+Only a few functions are documented in this tutorial. I have a complete implementation available on GitHub. It contains operations for adding and removing elements at any position in the list. It also manages the allocation and freeing of memory in constructors and destructors. This implementation has been verified using automated testing.\\
 
 \href{https://github.com/jake-billings/edu-csci2312/tree/master/hw06}{https://github.com/jake-billings/edu-csci2312/tree/master/hw06}
 
@@ -178,7 +175,7 @@ Other Projects:
 \href{https://github.com/jake-billings/}{https://github.com/jake-billings/}\\
 
 \noindent
-Data Structures: \href{https://github.com/jake-billings/edu-csci2421}{https://github.com/jake-billings/edu-csci242}\\
+Data Structures: \href{https://github.com/jake-billings/edu-csci2421}{https://github.com/jake-billings/edu-csci2421}\\
 
 \noindent
 Medium: \href{https://github.com/jake-billings/edu-csci2421}{https://github.com/jake-billings/edu-csci2421}
